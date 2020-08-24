@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.7">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Microsoft.FeatureManagement.Data\Microsoft.FeatureManagement.Data.csproj" />
+        <ProjectReference Include="..\..\Microsoft.FeatureManagement.Service\Microsoft.FeatureManagement.Service.csproj" />
+        <ProjectReference Include="..\..\Microsoft.FeatureManagement\Microsoft.FeatureManagement.csproj" />
+    </ItemGroup>
+
+
+</Project>

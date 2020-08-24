@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Microsoft.FeatureManagement.Core\Microsoft.FeatureManagement.Core.csproj" />
+      <ProjectReference Include="..\Microsoft.FeatureManagement.Data\Microsoft.FeatureManagement.Data.csproj" />
+    </ItemGroup>
+
+</Project>
